@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Lab 14</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<div id="sty">
+      <link rel="stylesheet" type="text/css" href="style.css" >
+    </div>
+  </head>
+<body>
+	<div class="header">
+		<h1>MY SUPER DOOPER WEBSITE</h1>
+		<p>SOME OF MY BEST WORK!!!!!!!.</p>
+    <button id="ch" onclick="cssChange()"> Click HERE  to Style 1 change</button>
+    <button id="ch1" onclick="cssChange1()"> Click HERE  to Style 2 change</button>
+    <button id="ch0" onclick="cssChange0()"> Click HERE  to Style 3 change</button>
+    <button id="ch3" onclick="cssChange3()"> Click HERE  to Style 4 change</button>
+	</div>
+	<div class="topnav">
+		<a href="http://cnn.com">CNN</a>
+		<a href="http://w3schools.com">W3Schools</a>
+		<a href="http://taehs.org">THE BEST HS ON EARTH</a>
+	
+</div>
+<div class="row">
+  <div class="column">
+<a href="gameChoice1/g1.html"><h2>HTML</h2></a>
+    <p id="demo">Loremipsum.io dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2 id="ch">CSS</h2>
+ <p>Enter Student </p>
+<form name="listForm">
+First Name:<input name="fn" type="text"><br>
+Last Name:<input name="ln" type="text"><br>
+birthday:<input name="bd" type="text"><br>
+eye coloe:<input name="ec" type="text"><br>
+super Pwer:<input name="sp" type="text"><br>
+
+
+
+</form>
+
+ <h4>These are my students</h4>
+ <p id="arrayDemo"></p>
+  </div>
+  
+  <div class="column">
+    <h2>Javascript</h2>
+    <p id='pop'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    	<button id="change" onclick="pop()"> Click HERE to see JS in action</button>
+  </div>
+</div>
+<script>
+  // this will react to clicking the button
+  function pop() {
+    /*write inside the element
+    pop*/
+  document.getElementById('pop').innerHTML= "Hey Band!! How are you?";
+  }
+  //cssChange is a function that change the stylesheet to style2.css
+  //<div id="sty">
+  // <link rel="stylesheet" type="text/css" href="style.css" >
+  //</div>
+function cssChange(){
+     document.getElementById('sty').innerHTML='<link rel="stylesheet" type="text/css" href="style2.css" >';
+}
+ //cssChange is a function that change the stylesheet to style4.css
+ function cssChange1(){
+     document.getElementById('sty').innerHTML='<link rel="stylesheet" type="text/css" href="style4.css" >';
+}
+//cssChange is a function that change the stylesheet to style4.css
+ function cssChange3(){
+     document.getElementById('sty').innerHTML='<link rel="stylesheet" type="text/css" href="style3.css" >';
+}
+//cssChange is a function that change the stylesheet to style1.css
+function cssChange0(){
+     document.getElementById('sty').innerHTML='<link rel="stylesheet" type="text/css" href="style1.css" >';
+}
+  </script>
+</body>
+</html>
